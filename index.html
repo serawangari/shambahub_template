@@ -1,1 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShambaHub | Applications & Parcels</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="color-scheme" content="light only">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="https://experience.arcgis.com/experience/fc7581fef493414f8c3eccffb505e69c/page/HomePage" target="_top">
+    <img src="assets/logo.svg" alt="" class="logo" />
+    <strong>ShambaHub</strong>
+  </a>
+  <nav class="nav">
+    <a href="https://experience.arcgis.com/experience/fc7581fef493414f8c3eccffb505e69c/page/HomePage" target="_top">Home</a>
+    <a href="https://experience.arcgis.com/experience/fc7581fef493414f8c3eccffb505e69c/page/Parcel-Lookup" target="_top">My Properties</a>
+    <a href="https://daraja-arcgis-platform.vercel.app/" target="_blank" rel="noopener">My Wallet</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Applications & Parcel Services</h1>
+      <p>Start a new application or look up your parcel details. This page is optimized to embed inside Experience Builder.</p>
+      <div class="actions">
+        <a class="btn" href="#catalog">Start Application</a>
+        <a class="btn ghost" href="https://experience.arcgis.com/experience/fc7581fef493414f8c3eccffb505e69c/page/Parcel-Lookup" target="_top">Parcel Lookup</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- search + filters -->
+  <section class="toolbar">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7" stroke-width="2"/><path stroke-width="2" d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search services (e.g., planning, valuation, rates)…" aria-label="Search services">
+    </div>
+    <div class="right">
+      <button id="btn-grid" class="chip" aria-pressed="true">Grid</button>
+      <button id="btn-list" class="chip" aria-pressed="false">List</button>
+    </div>
+  </section>
+
+  <!-- catalog -->
+  <section id="catalog" class="grid" aria-label="Applications catalog">
+    <!-- Cards injected by app.js -->
+  </section>
+
+  <!-- info strip -->
+  <section class="info">
+    <div><strong id="count">0 services</strong> • Lincoln Green theme • EB-ready</div>
+    <a class="btn" href="https://experience.arcgis.com/experience/fc7581fef493414f8c3eccffb505e69c/page/HomePage" target="_top">Back to Home</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <small>© <span id="yr"></span> ShambaHub • Embedded-friendly template</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
 
